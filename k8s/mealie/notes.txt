@@ -1,0 +1,24 @@
+# hassan @ MacBook-Pro in ~/Learning/lab/k8s/mealie on main [18:18:45 24-09-20]
+$ k config set-context --current --namespace mealie
+Context "rancher-desktop" modified.
+
+# hassan @ MacBook-Pro in ~/Learning/lab/k8s/mealie on main [18:20:23 24-09-20]
+$ kgp
+NAME            READY   STATUS    RESTARTS   AGE
+hassan-mealie   1/1     Running   0          5m46s
+
+# hassan @ MacBook-Pro in ~/Learning/lab/k8s/mealie on main [18:20:31 24-09-20]
+$ k get pods -n default
+NAME        READY   STATUS    RESTARTS   AGE
+nginx-tmp   1/1     Running   0          13m
+
+# hassan @ MacBook-Pro in ~/Learning/lab/k8s/mealie on main [18:20:57 24-09-20]
+$ k get pods -n mealie
+NAME            READY   STATUS    RESTARTS   AGE
+hassan-mealie   1/1     Running   0          6m21s
+
+# hassan @ MacBook-Pro in ~/Learning/lab/k8s/mealie on main [18:21:06 24-09-20]
+$ k get pods
+NAME            READY   STATUS    RESTARTS   AGE
+hassan-mealie   1/1     Running   0          6m24s
+
